@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+    tools:context=".DeniedActivity">
+
+    <ImageView
+        android:id="@+id/denied_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_above="@+id/denied_txtview"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
+        tools:src="@drawable/cat" />
+
+
+    <TextView
+        android:id="@+id/denied_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Access Denied"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/goodbye_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/denied_imgview"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="-100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="GoodBye"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+</RelativeLayout>
